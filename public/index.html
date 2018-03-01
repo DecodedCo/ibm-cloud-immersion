@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HR Portal 2</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Clean and responsive HR Portal">
+        <meta name="keywords" content="Admin,Panel,HTML,CSS,XML,JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/notyf.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="js/uikit.min.js" ></script>
+		<script src="js/uikit-icons.min.js" ></script>
+    </head>
+    <body>
+        <div uk-sticky class="uk-navbar-container tm-navbar-container uk-active">
+            <div class="uk-container uk-container-expand">
+                <nav uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a id="sidebar_toggle" class="uk-navbar-toggle" uk-navbar-toggle-icon ></a>
+                        <a href="#" class="uk-navbar-item uk-logo">
+                            HR Portal
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="sidebar" class="tm-sidebar-left uk-background-default">
+            <center>
+                <div class="user">
+                    <img id="avatar" width="100" class="uk-border-circle" src="images/avatar.jpg" />
+                    <div class="uk-margin-top"></div>
+                    <div id="name" class="uk-text-truncate">Jim Davis</div>
+                    <div id="email" class="uk-text-truncate">jim.davis@corp.com</div>
+                    <span id="status" data-enabled="true" data-online-text="Online" data-away-text="Away" data-interval="10000" class="uk-margin-top uk-label uk-label-success"></span>
+                </div>
+                <br />
+            </center>
+        </div>
+        <div class="content-padder content-background">
+            <div class="uk-section-small uk-section-default header">
+                <div class="uk-container uk-container-large">
+                    <h1><span class="ion-speedometer"></span> Dashboard</h1>
+                    <p>
+                        Welcome back, Jim Davis
+                    </p>
+                    <ul class="uk-breadcrumb">
+                        <li>Home</li>
+                        <li><span href="">Dashboard</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-section-small">
+                <div class="uk-container uk-container-large">
+                    <div uk-grid class="uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-4@xl">
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <span class="statistics-text">New Hires</span><br />
+                                <span class="statistics-number">
+                                    14
+                                    <span class="uk-label uk-label-success">
+                                        8% <span class="ion-arrow-up-c"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <span class="statistics-text">Performance Reports</span><br />
+                                <span class="statistics-number">
+                                    123
+                                    <span class="uk-label uk-label-danger">
+                                        13% <span class="ion-arrow-down-c"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <span class="statistics-text">Employee Churn</span><br />
+                                <span class="statistics-number">
+                                    2.31
+                                    <span class="uk-label uk-label-success">
+                                        37% <span class="ion-arrow-up-c"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body">
+                                <span class="statistics-text">Total Overheads</span><br />
+                                <span class="statistics-number">
+                                    603.8K$
+                                    <span class="uk-label uk-label-success">
+                                        26% <span class="ion-arrow-up-c"></span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div uk-grid class="uk-child-width-1-1@s uk-child-width-1-2@l">
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-header">
+                                    Recruitment Traffic
+                                </div>
+                                <div class="uk-card-body">
+                                    <canvas id="chart1"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-header">
+                                    Recruitment Traffic
+                                </div>
+                                <div class="uk-card-body">
+                                    <canvas id="chart2"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- Load More Javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js" integrity="sha256-GcknncGKzlKm69d+sp+k3A2NyQE+jnu43aBl6rrDN2I=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js" integrity="sha256-rqEXy4JTnKZom8mLVQpvni3QHbynfjPmPxQVsPZgmJY=" crossorigin="anonymous"></script>
+		<script src="js/notyf.min.js"></script>
+		<!-- Required Overall Script -->
+        <script src="js/script.js"></script>
+		<!-- Status Updater -->
+		<script src="js/status.js"></script>
+		<!-- Sample Charts -->
+		<script src="js/charts.js"></script>
+		<!-- Sample Notifications -->
+		<script src="js/notification.js"></script>
+    </body>
+</html>
