@@ -2,9 +2,8 @@
 
 ## Pre-requisites
 
-0. node, npm, docker, cf cli
-0. https://console.bluemix.net/docs/cloudnative/idt/index.html (as user)
-0. https://kubernetes.io/docs/tasks/tools/install-kubectl/ (as root)
+0. Docker machine, node, npm
+0. https://console.bluemix.net/docs/cloudnative/idt/index.html (both root and as user)
 1. https://console.bluemix.net/docs/cli/reference/bluemix_cli/download_cli.html#download_install
 2. https://www.ibm.com/support/knowledgecenter/en/SSBS6K_2.1.0/manage_cluster/install_cli.html
 3. https://www.ibm.com/blogs/bluemix/2017/09/deploying-ibm-cloud-private-ibm-cloud-developer-tools-cli/
