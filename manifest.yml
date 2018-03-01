@@ -2,8 +2,10 @@
 applications:
 - instances: 1
   timeout: 180
-  name: vanilla
+  name: YOURNAMEHERE
   buildpack: sdk-for-nodejs
   command: npm start
   memory: 384M
-  random-route: true
+  random-route: false
+# services:
+# - App ID-57
