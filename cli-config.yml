@@ -59,4 +59,4 @@ chart-path: "chart/vanilla"
 
 # Deployment to Private Cloud
 deploy-target: "container"
-deploy-image-target: "mycluster.icp:8500/default/private-portal"
+deploy-image-target: "mycluster.icp:8500/default/YOURAPPNAME"

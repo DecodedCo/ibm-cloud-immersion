@@ -8,4 +8,4 @@ applications:
   memory: 384M
   random-route: false
   # services:
-  # - App ID-57
+  # - App ID-cloud
